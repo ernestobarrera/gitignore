@@ -11,30 +11,33 @@ the following resources are a great place to start:
 - The [Ignoring Files article][help] on the GitHub Help site.
 - The [gitignore(5)][man] manual page.
 
-[man]: http://git-scm.com/docs/gitignore
+[man]: https://git-scm.com/docs/gitignore
 [help]: https://help.github.com/articles/ignoring-files
-[chapter]: https://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#_ignoring
-[progit]: http://git-scm.com/book
+[chapter]: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#_ignoring
+[progit]: https://git-scm.com/book
 
 ## Folder structure
 
 We support a collection of templates, organized in this way:
 
-- the root folder contains templates in common use, to help people get started
+- The root folder contains templates in common use, to help people get started
   with popular programming languages and technologies. These define a meaningful
   set of rules to help get started, and ensure you are not committing
-  unimportant files into your repository
+  unimportant files into your repository.
 - [`Global`](./Global) contains templates for various editors, tools and
   operating systems that can be used in different situations. It is recommended
-  that you either [add these to your global template](https://help.github.com/articles/ignoring-files/#create-a-global-gitignore)
+  that you either [add these to your global template](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files#configuring-ignored-files-for-all-repositories-on-your-computer)
   or merge these rules into your project-specific templates if you want to use
   them permanently.
 - [`community`](./community) contains specialized templates for other popular
-  languages, tools and project, which don't currently belong in the mainstream
+  languages, tools, and projects that don't currently belong in the mainstream
   templates. These should be added to your project-specific templates when you
   decide to adopt the framework or tool.
 
 ## What makes a good template?
+
+First and foremost, a template contribution must adhere to our
+[Contributing Guidelines](CONTRIBUTING.md).
 
 A template should contain a set of rules to help Git repositories work with a
 specific programming language, framework, tool or environment.
@@ -50,7 +53,7 @@ If you have a small set of rules, or want to support a technology that is not
 widely in use, and still believe this will be helpful to others, please read the
 section about [specialized templates](#specialized-templates) for more details.
 
-Include details when opening pull request if the template is important and visible. We
+Include details when opening a pull request if the template is important and visible. We
 may not accept it immediately, but we can promote it to the root at a later date
 based on interest.
 
@@ -61,33 +64,7 @@ include your language, tool, or project, it’s not because it’s not awesome.
 
 ## Contributing guidelines
 
-We’d love for you to help us improve this project. To help us keep this collection
-high quality, we request that contributions adhere to the following guidelines.
-
-- **Provide a link to the application or project’s homepage**. Unless it’s
-  extremely popular, there’s a chance the maintainers don’t know about or use
-  the language, framework, editor, app, or project your change applies to.
-
-- **Provide links to documentation** supporting the change you’re making.
-  Current, canonical documentation mentioning the files being ignored is best.
-  If documentation isn’t available to support your change, do the best you can
-  to explain what the files being ignored are for.
-
-- **Explain why you’re making a change**. Even if it seems self-evident, please
-  take a sentence or two to tell us why your change or addition should happen.
-  It’s especially helpful to articulate why this change applies to _everyone_
-  who works with the applicable technology, rather than just you or your team.
-
-- **Please consider the scope of your change**. If your change is specific to a
-  certain language or framework, then make sure the change is made to the
-  template for that language or framework, rather than to the template for an
-  editor, tool, or operating system.
-
-- **Please only modify _one template_ per pull request**. This helps keep pull
-  requests and feedback focused on a specific project or technology.
-
-In general, the more you can do to help us understand the change you’re making,
-the more likely we’ll be to accept your contribution quickly.
+Please see our [Contributing Guidelines](CONTRIBUTING.md).
 
 ## Versioned templates
 
@@ -116,7 +93,7 @@ header of the template.
 
 For example, this template might live at `community/DotNet/InforCRM.gitignore`:
 
-```
+```gitignore
 # gitignore template for InforCRM (formerly SalesLogix)
 # website: https://www.infor.com/product-summary/cx/infor-crm/
 #
@@ -141,7 +118,7 @@ Here’s how we suggest you go about proposing a change to this project:
 1. [Fork this project][fork] to your account.
 2. [Create a branch][branch] for the change you intend to make.
 3. Make your changes to your fork.
-4. [Send a pull request][pr] from your fork’s branch to our `master` branch.
+4. [Send a pull request][pr] from your fork’s branch to our `main` branch.
 
 Using the web-based interface to make changes is fine too, and will help you
 by automatically forking the project and prompting to send a pull request too.
@@ -153,3 +130,4 @@ by automatically forking the project and prompting to send a pull request too.
 ## License
 
 [CC0-1.0](./LICENSE).
+
